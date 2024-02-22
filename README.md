@@ -1,66 +1,79 @@
-## Signage Display
+<div align="center">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Logo" width="80" height="80">
+  <h3 align="center">Signage Display: Your One-Stop Digital Billboard Solution</h3>
+  <p align="center">
+    Design, create, and manage vibrant digital signs with ease.
+    <br />
+    <a href="https://empress.eco/"><strong>Explore the Website »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/empress-eco/signage_display/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/empress-eco/signage_display/issues">Request Feature</a>
+  </p>
+</div>
 
-Signage Display is a customizable Frappe app for creating digital signage display boards. It allows you to design and display signages with the help of a Rich Text Editor and custom images with minimal set-up time. 
+## About The Project
 
-![signage display app example](https://user-images.githubusercontent.com/42403668/212523549-d846ce0f-428c-416f-af62-ba1847211553.gif)
+Signage Display is a robust, user-friendly tool designed to simplify your digital display board creation and management process. It caters to anyone who needs to create engaging, customizable digital signages, offering a streamlined solution to the traditionally cumbersome process of designing and displaying digital signages.
 
-It also comes with customization options for adjusting the layout and speed of the presented slideshow according to individual requirements. 
+## Key Features
 
-<p float="left">
- <kbd>
-   <img src="https://user-images.githubusercontent.com/42403668/212525397-faec0c7a-12c8-48ce-983a-0cbeb8f6e2c1.png" alt="signage display board with 2 columns and 1 row" width=400/>
-  </kbd>
- <kbd>
-    <img src="https://user-images.githubusercontent.com/42403668/212525423-e4638248-09a2-476a-9edc-ed9b96aeb027.png" alt="signage display board with 2 columns and 2 rows" width=400/>
-  </kbd>
-</p>
+- **Rich Text Editor**: Unleash your creativity with a versatile text editor.
+- **Customizable Images**: Enrich your signages with custom images.
+- **Layout & Speed Customization**: Personalize the layout and transition speed to match your preferences.
+- **Easy Installation**: Choose between effortless installation on the Empress Cloud or a straightforward local setup.
+
+## Technical Stack and Setup Instructions
+
+Signage Display operates on the Framework. 
 
 ### Installation
 
-##### Install on Frappe Cloud
+#### Install on Empress Cloud
 
-1. Go to [Frappe Cloud Dashboard- Sites](https://frappecloud.com/dashboard/sites) and create a new site. 
-2. Select "Select apps to install" and choose "Signage Display"
-3. Complete the site setup with the help of the new site wizard. 
+1. Navigate to [Empress Cloud Dashboard- Sites](https://Empresscloud.com/dashboard/sites) and create a new site.
+2. Choose "Select apps to install" and select "Signage Display".
+3. Follow the new site wizard to complete the site setup.
 
-##### Install Locally
-1. [Set up Frappe Bench](https://frappeframework.com/docs/v14/user/en/installation)
-2. Go to the created 'frappe-bench' directory.
-3. Run these commands to set up a new site and install Signage Display
+#### Install Locally
 
-```
+1. [Set up Empress Bench](https://Empressframework.com/docs/v14/user/en/installation).
+2. Navigate to the 'Empress-bench' directory you've created.
+3. Run the following commands to set up a new site and install Signage Display:
+
+```sh
 bench new-site signage.localhost
-bench get-app signage_display https://github.com/one-highflyer/frappe-signage-display-app
+bench get-app signage_display https://github.com/empress-eco/signage_display.git
 bench --site signage.localhost install-app signage_display
 bench start
 ```
 
-4. Complete the site initialization by visiting the site URL.
+4. Visit the site URL to complete the site initialization.
 
-### Usage 
+## Usage
 
-##### Creating and viewing signages 
+#### Creating and Viewing Signages 
 
-1. Search for 'Signage List' of corresponding to the 'Signage' doctype on your site
-2. Choose 'Add Signage' option.
-3. Design the new signage by providing a appropriate title (mandatory), description, and display image. 
+1. Search for 'Signage List' corresponding to the 'Signage' document type on your site.
+2. Click the 'Add Signage' option.
+3. Design the new signage by providing a title (mandatory), description, and display image.
+4. Check the 'published' box to indicate if the new signage should be displayed on the signage display board.
+5. Save the signage.
+6. Visit your site URL followed by /display to view the signage slideshow on the display board.
 
-![New Signage page](https://user-images.githubusercontent.com/42403668/212526452-294b9430-80e8-4fc9-873e-b713211631df.png)
+## Contribution Guidelines
 
-4. Check the 'published' box to signal if the new signage should be diplayed on the signage display board. 
-5. Save the signage. 
-6. Go to <site-url>/display to view the signage slideshow shown on the display board. 
+We value community contributions! Here's how you can help improve Signage Display:
 
-##### Customizing the display board
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Signage Display provides several customization options to help you determine the final look of the display board. This includes:
-* Display Name 
-* Individual Signage Display Duration (default - 20000 ms)
-* Display Row Count : How many signages should the display board show in a column at a given time (default - 1)
-* Display Column Count: How many signages should the display board show in a row at a given time (default - 1)
+## License and Acknowledgements
 
-![Signage Settings page](https://user-images.githubusercontent.com/42403668/212526507-e18a71be-5fd4-4941-b60f-2ff28009901f.png)
+This project is under the MIT License. Your contributions are also licensed under the same terms.
 
-### License
-
-MIT
+We extend our heartfelt gratitude to the Empress Community for their foundational contributions to this project. Their innovation and dedication have been instrumental in shaping the essential tools that power this project. We are profoundly grateful for their pioneering work and ongoing support.
